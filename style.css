@@ -1,0 +1,303 @@
+
+
+body{
+	text-align: center;
+	margin: auto;
+	font-family:serif;
+}
+.container{
+	width: 1100px;
+	margin: auto;
+}
+
+.cover{
+	text-align: center;
+	margin:auto;
+	background-image:url(main.png);
+	width: 100vw;
+	background-size:cover;
+	height: 450px;
+	background-position: 0 -150px;
+}
+
+
+.h-top{
+	display: flex;
+	justify-content:space-between;
+	padding-top: 3%;
+}
+
+.h-logo{
+	width: 15%;
+	display: flex;
+	align-items: center;
+}
+
+.h-logo img{
+	width: 100%;
+}
+
+.h-menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.h-h{
+	visibility: hidden;
+}
+
+.h-menu a{
+	margin: 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+header h1{
+	margin-top: 125px;
+	font-size: 45px;
+	font-weight: 100;
+}
+
+main h2{
+	font-size: 40px;
+	font-weight: 100;
+	padding: 50px;
+}
+
+.news{
+	width: 65%;
+	margin: auto;
+	padding-bottom: 90px;
+}
+.l-news a{
+		display: none;
+	}	
+
+table{
+	border-collapse: collapse;
+	text-align: left;
+	margin: auto;
+	width: 100%;
+}
+
+table th,table td{
+	border-bottom: solid 1px;
+	padding: 30px 20px 30px 0;
+}
+
+.block{
+	border: 1px solid;
+	width: 60%;
+	padding: 5px;
+}
+
+.contents{
+	display: flex;
+	justify-content: space-around
+}
+
+.content{
+	width: 40%;
+}
+
+.content img{
+	width: 100%;
+}
+
+.content h3{
+	font-size: 25px;
+	font-weight: 100;
+	margin: 10px;
+}
+
+.content p{
+	font-size: 15px;
+	margin: 10px;
+}
+
+.content .more{
+	width: 70%;
+}
+
+.itiran a{
+	display: block;
+	padding: 10px 5px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+.itiran{
+	border: solid 1px;
+	margin: 60px auto 140px;
+	width: 20%;
+}
+
+.f-image{
+	display: flex;
+	
+}
+.f-image img{
+	width: calc(100%/3);
+}
+
+.f-contents{
+	background-color: black;
+	padding-top: 5px;
+}
+
+.f-item{
+	display: flex;
+	justify-content:space-between;
+	width: 1100px;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+.f-menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.f-menu a{
+	text-decoration: none;
+	color: white;
+	margin: 30px;
+	font-size: 18px;
+}
+
+.f-logo{
+	width: 9%;
+	display: flex;
+	align-items: center;
+}
+.f-logo img{
+	width: 100%;
+}
+
+footer p{
+	color: white;
+	font-size: 12px;
+	padding: 5px;
+}
+
+@media screen and (max-width:1100px) {
+    /*　画面サイズが1100px以下はここを読み込む　*/
+	.cover{
+		background-size:cover;
+		height: 50vh;
+		background-position:bottom;
+	}
+	
+	.container{
+		width: 100%; 
+	}
+	header h1{
+		margin: 10% auto;
+		font-size: 20px;
+	}
+	
+	.h-logo{
+		margin: 10px;
+	}
+	
+	.h-menu{
+		visibility:hidden;
+		
+	}
+	.h-menu a{
+		margin: o;
+		font-size: 1px;
+	}
+	
+	.h-h{
+		visibility: visible;
+		margin: 30px;
+	}
+	
+	main h2{
+		font-size: 25px;
+		padding: 30px;
+	}
+	
+	.news{
+		width: 95%;
+	}
+	.table{
+		display: none;
+	}
+	.l-news a{
+		display: block;
+		text-align: left;
+		border-bottom: solid 1px;
+		padding: 15px 0;
+		color: black;
+	}
+	.l-news a span{
+		display: inline-block;
+		padding: 5px;
+	}
+	
+	.l-news a .block{
+		text-align: center;
+		width: 15%;
+		padding: 4px 0px;
+		font-size: 13px;
+		margin-left: 20px;
+	}
+	.contents{
+		display: block;
+	}
+	
+	.content{
+		width: 95%;
+		margin: auto;
+	}
+	.content .more{
+		width:50%;
+		margin-bottom: 30px;
+	}
+	.itiran{
+	margin: 10px auto 70px;
+	width: calc(100%/3);
+}
+	.f-image{
+	display: block;
+	line-height:0;
+	
+}
+.f-image img{
+	width: 100%;
+	line-height:0;
+}
+	.f-menu{
+		display: block;
+		order: 1;
+		
+	}
+	.f-menu a{
+		display: block;
+	}
+	.f-item{
+	text-align: center;
+	flex-direction: column;
+	margin: auto;
+	padding-bottom: 10px;
+	width: 100%;
+}
+	.f-logo{
+	width: 15%;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	order: 2;
+}
+	
+	
+	
+	
+	
+}
