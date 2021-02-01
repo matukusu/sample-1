@@ -15,9 +15,10 @@ body{
 	margin:auto;
 	background-image:url(main.png);
 	width: 100vw;
-	background-size:cover;
-	height: 450px;
-	background-position: 0 -150px;
+	background-size: cover;
+	height: 70vh;
+	background-position: bottom;
+	position:relative;
 }
 
 
@@ -55,7 +56,11 @@ body{
 }
 
 header h1{
-	margin-top: 125px;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
 	font-size: 45px;
 	font-weight: 100;
 }
